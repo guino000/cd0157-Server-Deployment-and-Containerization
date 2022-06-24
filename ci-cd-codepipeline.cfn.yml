@@ -9,7 +9,7 @@ Parameters:
   EksClusterName:
     Type: String
     Description: The name of the EKS cluster created
-    Default: simple-jwt-api
+    Default: eksctl-demo
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter the EKS cluster name
@@ -32,6 +32,7 @@ Parameters:
 
   GitHubToken:
     Type: String
+    Default: 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
     NoEcho: true
     Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
     MinLength: 3
@@ -40,7 +41,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: guino000
     Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
@@ -56,7 +57,7 @@ Parameters:
 
   KubectlRoleName:
     Type: String
-    Default: UdacityFlaskDeployCBKubectlRole
+    Default: PipelineProjectKubectlRole
     Description: IAM role used by kubectl to interact with EKS cluster
     MinLength: 3
     MaxLength: 100
